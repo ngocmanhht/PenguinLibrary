@@ -2,6 +2,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import BottomTabs from './bottom-tab';
 import { Screens } from '../const';
+import Walkthrough from '../screens/walkthrough';
+import Login from '../screens/login';
 
 const Stack = createStackNavigator();
 
@@ -12,6 +14,9 @@ const AppNavigator = () => {
         headerShown: false,
       }}
     >
+      <Stack.Screen name={Screens.Walkthrough} component={Walkthrough} />
+      <Stack.Screen name={Screens.Login} component={Login} />
+
       <Stack.Screen name={Screens.BottomTab} component={BottomTabs} />
     </Stack.Navigator>
   );
