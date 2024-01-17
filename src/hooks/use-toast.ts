@@ -1,18 +1,9 @@
 import Toast, { ToastType } from 'react-native-toast-message';
 
 const useCustomToast = () => {
-  const show = ({
-    type,
-    title,
-    content,
-  }: {
-    type: ToastType;
-    title?: string;
-    content: string;
-  }) => {
+  const show = ({ type, content }: { type: ToastType; content: string }) => {
     Toast.show({
       type: type,
-      text1: title,
       text2: content,
     });
   };

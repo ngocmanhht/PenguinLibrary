@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleProp, Text, TouchableOpacity, ViewStyle } from 'react-native';
+import { StyleProp, TouchableOpacity, ViewStyle } from 'react-native';
+import { Text } from '../text';
 
 const LongButton = ({
   onPress,

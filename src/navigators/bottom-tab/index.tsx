@@ -16,15 +16,16 @@ const BottomTabs = () => {
       screenOptions={{
         tabBarStyle: {
           borderRadius: 15,
-          paddingTop: 35,
+          paddingTop: 30,
         },
+        headerShown: false,
       }}
     >
       <Tab.Screen
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ focused }) => (
-            <Icon source={focused ? Icons.ActiveHome : Icons.Home} />
+            <Icon focused={focused} source={Icons.Home} />
           ),
         }}
         name={Screens.Home}
@@ -34,7 +35,7 @@ const BottomTabs = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ focused }) => (
-            <Icon source={focused ? Icons.ActiveLibrary : Icons.Library} />
+            <Icon focused={focused} source={Icons.Library} />
           ),
         }}
         name={Screens.Library}
@@ -44,7 +45,7 @@ const BottomTabs = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ focused }) => (
-            <Icon source={focused ? Icons.ActiveHeart : Icons.Heart} />
+            <Icon focused={focused} source={Icons.Heart} />
           ),
         }}
         name={Screens.Favorites}
@@ -54,7 +55,7 @@ const BottomTabs = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ focused }) => (
-            <Icon source={focused ? Icons.ActiveSettings : Icons.Settings} />
+            <Icon focused={focused} source={Icons.Settings} />
           ),
         }}
         name={Screens.Settings}

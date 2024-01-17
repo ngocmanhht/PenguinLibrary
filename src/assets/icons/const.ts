@@ -3,8 +3,8 @@ export const Icons = {
   Library: require('./library.png'),
   Heart: require('./heart.png'),
   Settings: require('./settings.png'),
-  ActiveHome: require('./active-home.png'),
-  ActiveLibrary: require('./active-library.png'),
-  ActiveHeart: require('./active-heart.png'),
-  ActiveSettings: require('./active-settings.png'),
+  EyeOpen: require('./eye-open.png'),
+  EyeHide: require('./eye-hide.png'),
+  HandWithStar: require('./hand-with-start.png'),
+  Recommend: require('./recommend.png'),
 };

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, SafeAreaView, Text } from 'react-native';
+import { Button, SafeAreaView } from 'react-native';
+import { Text } from '../../components/text';
 import useToast from '../../hooks/use-toast';
 
 const Library = () => {
@@ -10,7 +11,6 @@ const Library = () => {
         onPress={() => {
           toast.show({
             type: 'success',
-            title: '12',
             content: 'Hello World',
           });
         }}
