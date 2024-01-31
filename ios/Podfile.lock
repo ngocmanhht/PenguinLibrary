@@ -337,6 +337,14 @@ PODS:
     - React-Core
   - react-native-splash-screen (3.3.0):
     - React-Core
+  - react-native-video (5.2.1):
+    - React-Core
+    - react-native-video/Video (= 5.2.1)
+  - react-native-video/Video (5.2.1):
+    - React-Core
+  - react-native-webview (13.6.4):
+    - RCT-Folly (= 2021.07.22.00)
+    - React-Core
   - React-perflogger (0.71.6)
   - React-RCTActionSheet (0.71.6):
     - React-Core/RCTActionSheetHeaders (= 0.71.6)
@@ -482,6 +490,8 @@ DEPENDENCIES:
   - react-native-pdf (from `../node_modules/react-native-pdf`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
+  - react-native-video (from `../node_modules/react-native-video`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -566,6 +576,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
+  react-native-video:
+    :path: "../node_modules/react-native-video"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -637,6 +651,8 @@ SPEC CHECKSUMS:
   react-native-pdf: b4ca3d37a9a86d9165287741c8b2ef4d8940c00e
   react-native-safe-area-context: 0ee144a6170530ccc37a0fd9388e28d06f516a89
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
+  react-native-video: c26780b224543c62d5e1b2a7244a5cd1b50e8253
+  react-native-webview: 107961c73db53d66549c867a3b64eaa20d34c41f
   React-perflogger: 43392072a5b867a504e2b4857606f8fc5a403d7f
   React-RCTActionSheet: c7b67c125bebeda9fb19fc7b200d85cb9d6899c4
   React-RCTAnimation: c2de79906f607986633a7114bee44854e4c7e2f5
@@ -656,6 +672,6 @@ SPEC CHECKSUMS:
   Yoga: ba09b6b11e6139e3df8229238aa794205ca6a02a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: e51ea40afc55076fa07bd0faebf9142b0ef50150
+PODFILE CHECKSUM: 70995a0db517630de3bf217de91f15bd87dde6f8
 
 COCOAPODS: 1.12.1

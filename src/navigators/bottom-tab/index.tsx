@@ -2,11 +2,11 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../screens/Home';
 import { Screens } from '../../const';
-import Library from '../../screens/library';
 import { Favourite } from '../../screens/favourite';
 import { Settings } from '../../screens/settings';
 import { Icon } from '../../components/Icon';
 import { Icons } from '../../assets/icons/const';
+import LibraryStack from '../library-stack';
 
 const Tab = createBottomTabNavigator();
 
@@ -38,8 +38,8 @@ const BottomTabs = () => {
             <Icon focused={focused} source={Icons.Library} />
           ),
         }}
-        name={Screens.Library}
-        component={Library}
+        name={Screens.LibraryStack}
+        component={LibraryStack}
       />
       <Tab.Screen
         options={{
