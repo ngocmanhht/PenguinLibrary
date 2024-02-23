@@ -6,7 +6,7 @@ import Begin from './begin';
 
 const Walkthrough = () => {
   return (
-    <Swiper loop={false}>
+    <Swiper autoplay loop={false}>
       <ImageBackground source={images.WalkthroughImage1} style={{ flex: 1 }} />
       <ImageBackground source={images.WalkthroughImage2} style={{ flex: 1 }} />
       <ImageBackground source={images.WalkthroughImage3} style={{ flex: 1 }} />
