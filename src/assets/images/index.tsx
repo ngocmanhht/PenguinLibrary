@@ -13,4 +13,5 @@ export const images = {
   Watching: require('./watching-activity.png'),
   History: require('./history.png'),
   DefaultBook: require('./default-book.png'),
+  SettingBackground: require('./setting-background.png'),
 };
