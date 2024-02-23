@@ -15,14 +15,17 @@ const FunctionTab = ({
   icon,
   functText,
   showArrowRight = true,
+  onPress,
 }: {
   icon: ImageSourcePropType;
   functText: string;
   showArrowRight?: boolean;
+  onPress?: () => void;
 }) => {
   return (
     <TouchableOpacity
       disabled={showArrowRight}
+      onPress={onPress}
       style={{
         borderBottomWidth: 1,
         paddingVertical: 5,

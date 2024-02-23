@@ -6,10 +6,14 @@ import { images } from '../../assets/images';
 import { FontSizes } from '../../assets/styles/typography';
 import FunctionTab from './function-tab';
 import { Icons } from '../../assets/icons/const';
+import UIStore from '../../stores/ui';
+import useStores from '../../hooks/use-stores';
 
 export const Settings = () => {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+
+  const uiStore: UIStore = useStores().uiStore;
 
   return (
     <Container src={images.SettingBackground}>
@@ -111,6 +115,11 @@ export const Settings = () => {
             icon={Icons.Logout}
             functText='Đăng xuất'
             showArrowRight={false}
+            onPress={() =>
+              uiStore.showAlertBox({
+                msg: 'Bạn có chắc chắn muốn đăng xuất khỏi tài khoản ?',
+              })
+            }
           />
         </View>
       </View>
