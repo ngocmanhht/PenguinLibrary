@@ -26,4 +26,7 @@ export const Icons = {
   RightArrow: require('./right-arrow.png'),
   Update: require('./update.png'),
   Close: require('./close.png'),
+  Phone: require('./phone.png'),
+  Mail: require('./mail.png'),
+  User: require('./user.png'),
 };

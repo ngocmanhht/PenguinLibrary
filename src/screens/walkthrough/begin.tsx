@@ -28,7 +28,9 @@ const Begin = () => {
           bottom: screenHeight(10),
         }}
         title={'Đăng ký'}
-        onPress={() => {}}
+        onPress={() => {
+          navigation.navigate(Screens.Register as never);
+        }}
       />
     </ImageBackground>
   );

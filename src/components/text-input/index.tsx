@@ -1,4 +1,10 @@
-import { Image, TextInput, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  ImageSourcePropType,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { useState } from 'react';
 import { Icons } from '../../assets/icons/const';
 import { FontSizes } from '../../assets/styles/typography';
@@ -8,11 +14,13 @@ export const CustomTextInput = ({
   showEyeIcon = false,
   value,
   onChange,
+  endIcon,
 }: {
   placeholder?: string;
   showEyeIcon?: boolean;
   value: string;
   onChange: (e: string) => void;
+  endIcon?: ImageSourcePropType;
 }) => {
   const [show, setShow] = useState(false);
 
@@ -38,6 +46,14 @@ export const CustomTextInput = ({
           fontSize: FontSizes.lg,
         }}
       />
+
+      {endIcon && (
+        <Image
+          style={{ width: 20, height: 20 }}
+          resizeMode={'contain'}
+          source={endIcon}
+        />
+      )}
 
       {showEyeIcon && (
         <TouchableOpacity onPress={() => setShow(!show)}>

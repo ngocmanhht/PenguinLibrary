@@ -113,7 +113,9 @@ const Login = () => {
             >
               Bạn chưa có tài khoản ?
             </Text>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigaton.navigate(Screens.Register as never)}
+            >
               <Text
                 style={{
                   fontWeight: 'bold',

@@ -14,4 +14,5 @@ export const images = {
   History: require('./history.png'),
   DefaultBook: require('./default-book.png'),
   SettingBackground: require('./setting-background.png'),
+  RegisterBackground: require('./register-background.png'),
 };

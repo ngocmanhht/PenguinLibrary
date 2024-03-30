@@ -7,5 +7,6 @@ export enum Screens {
   Settings = 'Settings',
   Walkthrough = 'Walkthrough',
   Login = 'Login',
+  Register = 'Register',
   VideoDetail = 'VideoDetail',
 }
